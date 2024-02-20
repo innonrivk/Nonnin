@@ -1,0 +1,33 @@
+@font-face {
+    font-family: haim guttman;
+    src: url(../../../../res/Fonts/GHAIM.TTF)
+}
+
+.container-input{
+    width: 100%;
+
+}
+.input-div{
+    display: flex;
+    justify-content: left;
+    margin-right: 2%;
+    
+}
+.input{
+    font-family:monospace;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 45%;
+    aspect-ratio: 10;
+    border-radius: 50px;
+   
+}
+
+.input-text{
+  
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: haim guttman;
+    padding-left: 4%;
+    color: aliceblue;
+}

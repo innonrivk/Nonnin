@@ -1,0 +1,19 @@
+
+.setting-btn{
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 100%;
+    background: none;
+    border-style: none;
+    max-width: 85px;
+
+}
+.setting-btn-image{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.setting-btn:active{
+    transition: all 0.05s ease-in-out;
+    transform: scale(0.92);
+}

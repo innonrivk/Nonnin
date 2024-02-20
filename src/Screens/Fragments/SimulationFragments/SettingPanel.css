@@ -1,0 +1,34 @@
+.container {
+    overflow: auto;
+    display: flex;
+}
+
+.div-btn {
+    position: relative;
+    align-content: flex-start;
+    width: 15%;
+    padding-top: 2%;
+    padding-left: 1%;
+
+}
+
+.div-input-area {
+    margin-left: 0.1%;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 0%;
+    
+    /* Initially hidden */
+    /* Collapse to zero height */
+    max-width: 577px;
+    transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+    /* Apply transition to transform property */
+
+}
+.visible {
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform: translateY(0%);
+    height: 25%;
+    width: 100%; /* Expand to content height */
+  }

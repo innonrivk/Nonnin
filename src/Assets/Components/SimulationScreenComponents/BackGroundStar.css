@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+}
+.container-1{
+    background-image: url(../../res/Images/SimulationScreen/WhiteBackGroundStar.png);
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: calc(var(--image-w));
+}
+
+:root{
+    --image-url: url(../../res/Images/SimulationScreen/WhiteBackGroundStar.png)
+}

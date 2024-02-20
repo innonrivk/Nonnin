@@ -1,0 +1,31 @@
+@font-face {
+    font-family: haim guttman;
+    src: url(../../res/Fonts/GHAIM.TTF);
+}
+
+.info-btn {
+    background-color: rgba(237, 106, 90, 1);
+    width: 60%;
+    max-width: 400px;
+    aspect-ratio: 5;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: 'white';
+    color: #FFF;
+    font-family: haim guttman;
+    font-size: clamp(16px, 7vw, 42px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info-btn:active{
+    transition: all 0.05s ease-in-out; /* Smooth transitions */
+    transform: scale(0.9);
+}

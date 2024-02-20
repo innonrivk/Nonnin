@@ -1,0 +1,71 @@
+.simulation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .simulation-btn-container {
+        width: calc(85% -30px);
+        /* Adjust if needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border-style: none;
+        /* Remove background unless needed */
+        object-fit: contain;
+        /* Ensure image aspect ratio and prevent overflow */
+        border-radius: 50%;
+        /* Smooth transitions */
+    }
+    .simulation-btn-image {
+        width: calc(85% - 20px);
+        flex-grow: 1;
+        border-radius: 50%;
+        max-width: 500px;
+        filter: drop-shadow(-2vw 4vw 4.5px #000);
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .simulation-btn-container {
+        width: calc(85% -30px);
+        /* Adjust if needed */
+        display: flex;
+        border-style:  none;
+        max-width: 800px;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        /* Remove background unless needed */
+        object-fit: contain;
+        /* Ensure image aspect ratio and prevent overflow */
+        border-radius: 50%;
+        /* Smooth transitions */
+    }
+    .simulation-btn-image {
+        width: calc(85% - 30px);
+        flex-grow: 1;
+        border-radius: 50%;
+        max-width: 550px;
+        filter: drop-shadow(-1vw 1vw 4.5px #000);
+    }
+
+}
+
+/* css for <button> */
+
+
+
+.simulation-btn-image:active,
+.simulation-btn-image:focus {
+    /* Consistent hover/active/focus styles */
+    transition: all 0.05s ease-in-out;
+    /* Smooth transitions */
+
+    transform: scale(0.95) translate(-3%, 3%);
+    filter: drop-shadow(0px 0px 0px #000);
+}
