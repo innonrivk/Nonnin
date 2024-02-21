@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
+import React from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import EnteryScreen from '../Screens/EnteryScreen.js';
 import InfoScreen from '../Screens/InfoScreen.js';
 import SimulationScreen from '../Screens/SimulationScreen.js';

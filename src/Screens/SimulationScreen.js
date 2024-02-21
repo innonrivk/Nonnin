@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
 import "./SimulationScreen.css"
-import WhiteStar from "../Assets/res/Images/SimulationScreen/WhiteBackGroundStar.png"
-import SettingBtn from "../Assets/Components/SimulationScreenComponents/SettingComponents/SettingBtn";
 import SettingPanel from "./Fragments/SimulationFragments/SettingPanel";
 
 function SimulationScreen() {

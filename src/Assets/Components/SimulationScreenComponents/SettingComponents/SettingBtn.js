@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import React from "react";
 import SettingBtnImg from "../../../res/Images/SimulationScreen/SettingBtn.svg"
 import "./SettingBtn.css"
 
@@ -13,7 +12,7 @@ function SettingBtn(props) {
     return (
       <div>
             <button className="setting-btn" onClick={clickHandle}>
-                <img className="setting-btn-image" src={SettingBtnImg}></img>
+                <img alt="SETTING" className="setting-btn-image" src={SettingBtnImg}></img>
             </button>
             </div>
     );

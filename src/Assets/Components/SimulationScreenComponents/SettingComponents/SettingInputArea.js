@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-import SettingBtnImg from "../../../res/Images/SimulationScreen/SettingBtn.svg"
+import React from "react";
 import "./SettingInputArea.css"
 import ClosingTouchBar from "./SettingInputAreaComponents/ClosingTouchBar";
 import InputField from "./SettingInputAreaComponents/InputField";
