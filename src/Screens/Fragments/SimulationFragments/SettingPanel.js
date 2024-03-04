@@ -4,7 +4,7 @@ import SettingBtn from "../../../Assets/Components/SimulationScreenComponents/Se
 import SettingInputArea from "../../../Assets/Components/SimulationScreenComponents/SettingComponents/SettingInputArea";
 
 function SettingPanel(props) {
-  const [isSettingBtnClicked, setIsSettingBtnClicked] = useState(false)
+  const [isSettingBtnClicked, setIsSettingBtnClicked] = useState(true)
   
 
   return (
