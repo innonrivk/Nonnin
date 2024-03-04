@@ -1,7 +1,8 @@
 
 .setting-btn{
-    margin-left: 5%;
-    margin-top: 5%;
+    background-color: red;
+
+ 
     width: 100%;
     background: none;
     border-style: none;
@@ -9,6 +10,7 @@
 
 }
 .setting-btn-image{
+
     width: 100%;
     aspect-ratio: 1;
 }

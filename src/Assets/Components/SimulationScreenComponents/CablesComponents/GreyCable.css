@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    align-content: center;
+}
+.container-btn{
+    border-style: none;
+    background: none;
+
+}
+.container-img{
+    width: 100%;
+    height: 100%;
+}
