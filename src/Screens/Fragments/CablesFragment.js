@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./CablesFragmentt.css"
-import BlackVector from "../../Assets/res/Images/SimulationScreen/cables/blackVectorHideCable.svg"
 import GreyCableImage from "../../Assets/res/Images/SimulationScreen/cables/greyCable.png"
 import BlackCableImage from "../../Assets/res/Images/SimulationScreen/cables/blackCable.png"
 import GreyCableImagePressed from "../../Assets/res/Images/SimulationScreen/cables/greyCablePressed.png"
