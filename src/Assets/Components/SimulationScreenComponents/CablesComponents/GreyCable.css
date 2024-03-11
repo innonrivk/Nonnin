@@ -1,13 +1,24 @@
-.container{
-    display: flex;
-    align-content: center;
-}
+.container-cable{
+    width: 100%;
+    height: 100%;
+   }
 .container-btn{
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    height: auto;
     border-style: none;
     background: none;
+    
 
+}
+.container-btn::after,
+.container-btn:active{
+    
+    transition:all 0.05s ease-in-out;
 }
 .container-img{
     width: 100%;
     height: 100%;
 }
+

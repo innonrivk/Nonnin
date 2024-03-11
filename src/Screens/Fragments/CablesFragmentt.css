@@ -1,0 +1,30 @@
+.container-cable-fregments{
+    width: 100%;
+    height: 100%;
+}
+
+
+.container-cable-divs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30%;
+}
+.grey-cable{
+    /* background-color: rgb(24, 65, 216); */
+    
+    margin-left: 15%;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.black-cable{
+    /* background-color: yellow; */
+    margin-right: 15%;
+    grid-row: 1;
+    grid-column: 1;
+}

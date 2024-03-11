@@ -1,18 +1,21 @@
 import React, { useState } from "react";
-import { useNavigate , Link } from "react-router-dom";
-import GreyCableImage from "../../../res/Images/SimulationScreen/cables/greyCabel.png"
-import "./GreyCabele.css"
-function GreyCable() {
+
+import "./GreyCable.css"
+function GreyCable(props) {
     const [click, setClick] = useState(false)
 
+    function clickHandle(){
+      setClick(prev => !prev)
+      props.cbFunction(prev => !prev)
+    }
   return (
     <div className="container">
-        <button className="container-btn" onClick={setClick(prev => !prev)}>
-        <img  src={GreyCableImage} className="" />
+        <button className="container-btn" onClick={() => {clickHandle()}}>
+        <img  src={click ? props.imagePressed : props.image} className="container-img" />
         </button>    
     </div>
     );
 
 }
-
+ 
 export default GreyCable;

@@ -8,7 +8,7 @@ function SettingPanel(props) {
   
 
   return (
-    <div className="container">
+    <div className=".container-setting-panel">
       <div className="div-btn" >
      <SettingBtn cbFunction={setIsSettingBtnClicked}></SettingBtn>
      </div>

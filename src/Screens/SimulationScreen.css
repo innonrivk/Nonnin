@@ -3,14 +3,13 @@
     position: absolute;
     width: 100vw;
     overflow: hidden;
-
     height: 100vh;
     background-color: #353535;
 
 }
 
 .main-div{
-    display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
@@ -31,3 +30,6 @@
     background-repeat: no-repeat;
 }
  
+
+
+
