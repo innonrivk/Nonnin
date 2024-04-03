@@ -8,13 +8,13 @@ function SettingPanel(props) {
   
 
   return (
-    <div className=".container-setting-panel">
+    <div className="container-setting-panel">
       <div className="div-btn" >
      <SettingBtn cbFunction={setIsSettingBtnClicked}></SettingBtn>
      </div>
      
      <div className={`div-input-area ${isSettingBtnClicked ? "" : "visible"}`}> 
-        <SettingInputArea setCo2InBlow={props.setCo2InBlow} setSaturationInBlood={props.setSaturationInBlood} isClosing={isSettingBtnClicked} setIsClosing={setIsSettingBtnClicked} />
+        <SettingInputArea  setHeartbeat={props.setHeartbeat} setCo2InBlow={props.setCo2InBlow} setSaturationInBlood={props.setSaturationInBlood} isClosing={isSettingBtnClicked} setIsClosing={setIsSettingBtnClicked} />
       </div>
       
     </div>

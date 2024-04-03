@@ -16,10 +16,15 @@ function SettingInputArea(props) {
                 <div className="input-saturation"> 
                 <InputField setInput={props.setSaturationInBlood} text="סטורציה" ></InputField>
                 </div>
+                 {/*  for heartbeat */}
+                 <div className="input-heartbeat">
+                <InputField setInput={props.setHeartbeat} text="דופק" ></InputField>
+                </div>
                 {/*  for co2 in air blow */}
                 <div className="input-co2">
                 <InputField setInput={props.setCo2InBlow} text="פד״ח בנשיפה" ></InputField>
                 </div>
+                
             </div>
     );
 

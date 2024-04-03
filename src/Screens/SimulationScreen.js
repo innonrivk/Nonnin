@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./SimulationScreen.css"
 import SettingPanel from "./Fragments/SimulationFragments/SettingPanel";
 import CablesFragment from "./Fragments/CablesFragment";
-
+import ReturnBtn from "../Assets/Components/ReturnBtn"
 function SimulationScreen() {
   const [saturationInBlood, setSaturationInBlood] = useState(98)
   const [co2InBlow, setCo2InBlow] = useState(40)
+  const [heartbeat, setHeartbeat] = useState(40)
+
   const [isBlackCable, setIsBlackCable] = useState(false)
   const [isGreyCable, setIsGreyCable] = useState(false)
   useEffect(() => {
@@ -21,13 +23,16 @@ function SimulationScreen() {
   return (
     <div className="simulation-screen-frame">
       <div className="simulation-screen-frame-star">
-        <div className="main-div" style={{backgroundColor: ""}} >
-          
+        <div className="simulation-main-div" style={{backgroundColor: ""}} >
+          <div className="simulation-return-btn">
+            <ReturnBtn></ReturnBtn>
+          </div>
+
         <div  className="setting-panel">
           <CablesFragment setIsGreyCable={setIsGreyCable} setIsBlackCable={setIsBlackCable}></CablesFragment>
         </div>
         <div className="setting-1">
-          <SettingPanel  setCo2InBlow={setCo2InBlow} setSaturationInBlood={setSaturationInBlood} ></SettingPanel>
+          <SettingPanel  setHeartbeat={setHeartbeat} setCo2InBlow={setCo2InBlow} setSaturationInBlood={setSaturationInBlood} ></SettingPanel>
         </div>
 
         

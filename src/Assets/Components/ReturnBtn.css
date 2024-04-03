@@ -1,0 +1,19 @@
+
+.return-btn{
+    width: 100%;
+    background: none;
+    border-style: none;
+
+    max-width: 85px;
+
+}
+.return-btn-image{
+    width: 100%;
+    aspect-ratio: 1;
+
+}
+
+.return-btn:active{
+    transition: all 0.05s ease-in-out;
+    transform: scale(0.92);
+}
