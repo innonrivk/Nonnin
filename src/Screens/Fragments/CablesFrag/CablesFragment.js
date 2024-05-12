@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./CablesFragmentt.css"
-import GreyCableImage from "../../Assets/res/Images/SimulationScreen/cables/greyCable.png"
-import BlackCableImage from "../../Assets/res/Images/SimulationScreen/cables/blackCable.png"
-import GreyCableImagePressed from "../../Assets/res/Images/SimulationScreen/cables/greyCablePressed.png"
-import BlackCableImagePressed from "../../Assets/res/Images/SimulationScreen/cables/blackCablePressed.png"
-import GreyCable from "../../Assets/Components/SimulationScreenComponents/CablesComponents/GreyCable.js";
+import GreyCableImage from "../../../Assets/res/Images/SimulationScreen/cables/greyCable.png"
+import BlackCableImage from "../../../Assets/res/Images/SimulationScreen/cables/blackCable.png"
+import GreyCableImagePressed from "../../../Assets/res/Images/SimulationScreen/cables/greyCablePressed.png"
+import BlackCableImagePressed from "../../../Assets/res/Images/SimulationScreen/cables/blackCablePressed.png"
+import GreyCable from "../../../Assets/Components/SimulationScreenComponents/CablesComponents/GreyCable";
 function CablesFragment(props) {
 
 

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./SimulationScreen.css"
-import SettingPanel from "./Fragments/SimulationFragments/SettingPanel";
-import CablesFragment from "./Fragments/CablesFragment";
-import ReturnBtn from "../Assets/Components/ReturnBtn"
+import SettingPanel from "./Fragments/SimulationFragments/SettingPanel.js";
+import CablesFragment from "./Fragments/CablesFrag/CablesFragment.js";
+import ReturnBtn from "../Assets/Components/ReturnBtn.js"
 function SimulationScreen() {
   const [saturationInBlood, setSaturationInBlood] = useState(98)
   const [co2InBlow, setCo2InBlow] = useState(40)

@@ -54,7 +54,7 @@ function Co2Screen(props) {
   return (
     <div className="co2-contianer-div">
       <div className="co2-grid">
-        {numberBlock.map((key, index) => (<div className={`block-${key}`}> <img src={RedBlock} className="block-image"></img> </div>))}
+        {numberBlock.map((key, index) => (<div className={`block-${key}`} key={key}> <img src={RedBlock} className="block-image" alt="img"></img> </div>))}
       </div>
     </div>
   );

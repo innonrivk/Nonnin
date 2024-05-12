@@ -1,7 +1,7 @@
 import React, {  useState } from "react";
 import "./SettingPanel.css"
 import SettingBtn from "../../../Assets/Components/SimulationScreenComponents/SettingComponents/SettingBtn.js";
-import SettingInputArea from "../../../Assets/Components/SimulationScreenComponents/SettingComponents/SettingInputArea";
+import SettingInputArea from "../../../Assets/Components/SimulationScreenComponents/SettingComponents/SettingInputArea.js";
 
 function SettingPanel(props) {
   const [isSettingBtnClicked, setIsSettingBtnClicked] = useState(true)

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: lcd-screen;
+    src: url(../../../../res/Fonts/DS-DIGIT.TTF);
+}
+.container-main-screen-text{
+    width: 100%;
+    height: 100%;
+}
+.main-screen-text{
+    display: flex;
+    justify-content: right;
+    font-size: 2.3rem;
+    color: rgb(255, 0, 0);
+    font-family: lcd-screen;
+}
+
