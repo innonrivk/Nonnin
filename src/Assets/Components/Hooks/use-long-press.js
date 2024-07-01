@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
-import "./NonninButton.css"
+import { useState, useRef } from 'react';
 
-function NonninButton(props) {
+export default function useLongPress() {
   const [action, setAction] = useState();
 
   const timerRef = useRef();
@@ -18,20 +17,24 @@ function NonninButton(props) {
   function handleOnClick(e) {
     console.log('handleOnClick');
     if ( isLongPress.current ) {
-      props.setIsLongPress(true);
+      console.log('Is long press - not continuing.');
+      return;
     }
-    props.setPressedBtn(props.buttonName)
+    setAction('click')
   }
 
   function handleOnMouseDown() {
+    console.log('handleOnMouseDown');
     startPressTimer();
   }
 
   function handleOnMouseUp() {
+    console.log('handleOnMouseUp');
     clearTimeout(timerRef.current);
   }
 
   function handleOnTouchStart() {
+    console.log('handleOnTouchStart');
     startPressTimer();
   }
 
@@ -40,17 +43,15 @@ function NonninButton(props) {
     console.log('handleOnTouchEnd');
     clearTimeout(timerRef.current);
   }
-  
 
-
-  return (
-    <div className="container-button">
-      <button className="button-nonin"  onTouchEnd={handleOnTouchEnd} onTouchStart={handleOnTouchStart} onMouseDown={handleOnMouseDown} onMouseUp={handleOnMouseUp} onClick={handleOnClick} >
-        <img alt={`${props.buttonName}`} className="nonnin-button-image" src={props.imageSource}></img>
-      </button>
-    </div>
-  );
-
+  return {
+    action,
+    handlers: {
+      onClick: handleOnClick,
+      onMouseDown: handleOnMouseDown,
+      onMouseUp: handleOnMouseUp,
+      onTouchStart: handleOnTouchStart,
+      onTouchEnd: handleOnTouchEnd
+    }
+  }
 }
-
-export default NonninButton;
