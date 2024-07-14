@@ -37,7 +37,7 @@ function ButtonsFrag(props) {
         if(chosenBtn1 != null && chosenBtn2 != null){
           props.setChosenBtn([chosenBtn1, chosenBtn2])
           clearParams()
-          setIsLongPress(null)
+          setIsLongPress(false)
         }
 
       }
@@ -45,6 +45,7 @@ function ButtonsFrag(props) {
         if(chosenBtn1 != null){
           props.setChosenBtn(chosenBtn1)
           clearParams()
+          setIsLongPress(false)
         }
       }
     } , [chosenBtn1, chosenBtn2, isLongPress])
@@ -52,19 +53,19 @@ function ButtonsFrag(props) {
    <div className="container-buttons-frag" >
     <div className="buttons-frag-grid">
     <div className="btn1">
-    <NonninButton  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={offButton} buttonName={"offButton"} ></NonninButton>
+    <NonninButton  isLongPress={isLongPress}  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={offButton} buttonName={"offButton"} ></NonninButton>
     </div>
     <div className="btn2">
-    <NonninButton  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={pollsButton} buttonName={"pollsButton"} ></NonninButton>
+    <NonninButton  isLongPress={isLongPress}  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={pollsButton} buttonName={"pollsButton"} ></NonninButton>
     </div>
     <div className="btn3">
-      <NonninButton  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={arrowsButton} buttonName={"arrowsButton"} ></NonninButton>
+      <NonninButton  isLongPress={isLongPress}  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={arrowsButton} buttonName={"arrowsButton"} ></NonninButton>
     </div>
     <div className="btn4">
-    <NonninButton  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={bellButton} buttonName={"bellButton"} ></NonninButton>
+    <NonninButton  isLongPress={isLongPress}  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={bellButton} buttonName={"bellButton"} ></NonninButton>
     </div>
     <div className="btn5">
-    <NonninButton  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={batteryButton} buttonName={"batteryButton"} ></NonninButton>
+    <NonninButton  isLongPress={isLongPress}  setIsLongPress={setIsLongPress} setPressedBtn={setPressedBtn} imageSource={batteryButton} buttonName={"batteryButton"} ></NonninButton>
     </div>
     
     </div>

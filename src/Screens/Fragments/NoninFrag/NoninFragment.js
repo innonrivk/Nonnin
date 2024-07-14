@@ -14,6 +14,8 @@ function NoninFragment(props) {
 
     if (Object(chosenBtn).length == 2){
       console.log("2 items")
+      console.log(chosenBtn)
+
     }
     if(chosenBtn == "offButton"){
       setIsPowerBtn(prev => !prev)

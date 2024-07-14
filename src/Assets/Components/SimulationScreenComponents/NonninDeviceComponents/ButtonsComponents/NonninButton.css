@@ -12,10 +12,17 @@
     width: 100%;
     height: 100%;
     background: none;
-    border: none;
+    border: none;   
     
 
  }
+
+ .nonnin-button-image-pressed{
+  margin-left: 4%;
+  width: 75%;
+  background-color: rgba(30, 28, 28, 0.386);
+ }
+
 
 .button-nonin:active{
     transition: all 0.05s ease-in-out;
