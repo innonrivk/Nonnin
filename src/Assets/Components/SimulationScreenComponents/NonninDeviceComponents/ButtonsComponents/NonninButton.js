@@ -62,7 +62,7 @@ function NonninButton(props) {
   return (
     <div className="container-button">
       <button className="button-nonin"  onTouchEnd={handleOnTouchEnd} onTouchStart={handleOnTouchStart} onMouseDown={handleOnMouseDown} onMouseUp={handleOnMouseUp} onClick={handleOnClick} >
-        <img alt={`${props.buttonName}`} className={action ? `nonnin-button-image-pressed` : `nonnin-button-image`} src={props.imageSource}></img>
+         <img alt={`${props.buttonName}`} className={action ? `nonnin-button-image-pressed` : `nonnin-button-image`} src={props.imageSource}></img>
       </button>
     </div>
   );
