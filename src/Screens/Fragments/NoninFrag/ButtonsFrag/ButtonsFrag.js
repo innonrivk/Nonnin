@@ -19,9 +19,9 @@ function ButtonsFrag(props) {
           return;
         }
       }
-      console.log("chosenbtn1",chosenBtn1)
-      console.log("chosenbtn2",chosenBtn2)
-      console.log("isLongPress",isLongPress)
+      // console.log("chosenbtn1",chosenBtn1)
+      // console.log("chosenbtn2",chosenBtn2)
+      // console.log("isLongPress",isLongPress)
      setChosenBtn1(btnName)
     }
     function clearParams(){
@@ -30,9 +30,9 @@ function ButtonsFrag(props) {
     }
     
     useEffect(()=>{
-      console.log("chosenbtn1",chosenBtn1)
-      console.log("chosenbtn2",chosenBtn2)
-      console.log("isLongPress",isLongPress)
+      // console.log("chosenbtn1",chosenBtn1)
+      // console.log("chosenbtn2",chosenBtn2)
+      // console.log("isLongPress",isLongPress)
       if(isLongPress){
         if(chosenBtn1 != null && chosenBtn2 != null){
           props.setChosenBtn([chosenBtn1, chosenBtn2])

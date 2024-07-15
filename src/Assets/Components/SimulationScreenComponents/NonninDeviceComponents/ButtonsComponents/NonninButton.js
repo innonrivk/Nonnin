@@ -1,52 +1,58 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import "./NonninButton.css"
+import { Await } from "react-router-dom";
 
 function NonninButton(props) {
   const [action, setAction] = useState();
   const timerRef = useRef();
   const longPress = useRef();
+  const cb = useCallback()
 
 
   useEffect(()=>{
+    console.log("props.isLongPress" ,props.isLongPress)
     if(!props.isLongPress){
       setTimeout(()=>{
         setAction(false)
         longPress.current = false}, 500)
-      
+    
     }
   }, [props.isLongPress])
 
 
-  function startPressTimer() {
-    longPress.current = false;
-    timerRef.current = setTimeout(() => {
+ async function startPressTimer() {
+     timerRef.current =  setTimeout(() => {
       longPress.current = true;
       setAction(true);
     }, 500)
   }
 
-  function handleOnClick(e) {
-    console.log('handleOnClick');
+  function handleOnClick  (e)   { 
+   console.log('handleOnClick'); 
+   if(action){
+    console.log("longpress" ,longPress.current)
+   }
     if ( longPress.current ) {
       props.setIsLongPress(true);
     }
     else if (longPress.current && props.isLongPress) {
-      props.setIsLongPress(false)
+       props.setIsLongPress(false)
     } 
-  
-  
     props.setPressedBtn(props.buttonName)
   }
 
   function handleOnMouseDown() {
     startPressTimer();
+    console.log('handleOnMouseDown');
+
   }
 
   function handleOnMouseUp() {
-    clearTimeout(timerRef.current);
+    console.log('handleOnMouseUp');
   }
 
   function handleOnTouchStart() {
+    console.log('handleOnTouchStart');
     startPressTimer();
   }
 
