@@ -10,6 +10,7 @@ function NoninFragment(props) {
   const [heartBeat, setHeartBeat] = useState();
   const [saturationInBlood, setSaturationInBlood] = useState();
 
+ 
   useEffect(()=>{
 
     if (Object(chosenBtn).length == 2){
@@ -20,7 +21,7 @@ function NoninFragment(props) {
     if(chosenBtn == "offButton"){
       setIsPowerBtn(prev => !prev)
     }
-    setChosenBtn(null)
+    setChosenBtn(prev => null)
 
   }, [chosenBtn])
 
@@ -32,6 +33,7 @@ function NoninFragment(props) {
       setSaturationInBlood(120)
     }
     else{
+      setChosenBtn(null)
       setCo2Level(null)
       setHeartBeat(null)
       setSaturationInBlood(null)
